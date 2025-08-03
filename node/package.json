@@ -1,0 +1,16 @@
+{
+  "name": "desafio-full-cycle-3-docker-node-nginx",
+  "version": "1.0.0",
+  "description": "Desafio do curso de Docker da fullcycle 3.0 sobre nginx e node",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rubenfabio/desafio-full-cycle-3.0-docker-node-nginx"
+  },
+  "author": "Ruben Fábio Gutierrez Gongora",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
