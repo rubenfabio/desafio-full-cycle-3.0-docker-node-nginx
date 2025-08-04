@@ -36,7 +36,7 @@ initConnection.connect((err) => {
 
 app.get('/', (req, res) => {
   const connection = getConnection();
-  const name = 'Ruben Fábio Gutierrez';
+  const name = 'Ruben Fábio' + new Date().toISOString();
   const insertSql = `INSERT INTO people(name) VALUES('${name}')`;
 
   connection.query(insertSql, (err) => {
