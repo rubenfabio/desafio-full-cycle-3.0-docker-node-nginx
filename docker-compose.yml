@@ -29,6 +29,8 @@ services:
     volumes:
       - ./node:/usr/src/app
       - /usr/src/app/node_modules
+    entrypoint: ["/usr/local/bin/dockerize", "-wait", "tcp://db:3306", "-timeout", "20s"]
+    command: ["npm", "run", "start"]
     depends_on:
       - db
 
