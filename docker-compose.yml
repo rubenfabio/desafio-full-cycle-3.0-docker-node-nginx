@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   nginx:
     image: rubenfabiodev/fullcycle-3-docker-nginx:latest
@@ -30,6 +28,7 @@ services:
       - node-network
     volumes:
       - ./node:/usr/src/app
+      - /usr/src/app/node_modules
     depends_on:
       - db
 
