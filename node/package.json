@@ -14,7 +14,7 @@
     "mysql": "^2.18.1"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "./docker-entrypoint.sh node index.js",
     "dev": "nodemon index.js"
   },
   "devDependencies": {
